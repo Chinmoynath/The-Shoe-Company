@@ -554,6 +554,14 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -563,8 +571,12 @@ video {
   margin-top: -2rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.-mt-6 {
+  margin-top: -1.5rem;
 }
 
 .flex {
@@ -579,16 +591,41 @@ video {
   width: 8rem;
 }
 
-.w-\[756px\] {
-  width: 756px;
-}
-
 .w-\[600px\] {
   width: 600px;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-\[1440px\] {
+  max-width: 1440px;
+}
+
+.-translate-x-\[50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -597,18 +634,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -622,32 +647,28 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/hero-backgrund\'\)\] {
-  background-image: url('/images/hero-backgrund');
+.bg-\[url\(\'\.\/images\/hero-background\.png\'\)\] {
+  background-image: url('./images/hero-background.png');
 }
 
-.bg-\[url\(\'\.\/images\/hero-backgrund\'\)\] {
-  background-image: url('./images/hero-backgrund');
+.bg-contain {
+  background-size: contain;
 }
 
-.bg-\[url\(\'\.\/tailwaind_project\/THE-SHOE-COMPANY\/images\/hero-backgrund\'\)\] {
-  background-image: url('./tailwaind_project/THE-SHOE-COMPANY/images/hero-backgrund');
+.bg-cover {
+  background-size: cover;
 }
 
-.bg-\[url\(\'\.\/tailwaind_project\/THE-SHOE-COMPANY\/images\/hero-backgrund\.png\'\)\] {
-  background-image: url('./tailwaind_project/THE-SHOE-COMPANY/images/hero-backgrund.png');
+.bg-left {
+  background-position: left;
 }
 
-.bg-\[url\(\'C\:\\Users\\CHINMOY\\project\\frontend-roadmap\\css\\tailwaind_project\\THE-SHOE-COMPANY\\images\\hero-background\.png\'\)\] {
-  background-image: url('C:\Users\CHINMOY\project\frontend-roadmap\css\tailwaind_project\THE-SHOE-COMPANY\images\hero-background.png');
+.bg-right {
+  background-position: right;
 }
 
-.bg-\[url\(\'C\:\/Users\/CHINMOY\/project\/frontend-roadmap\/css\/tailwaind_project\/THE-SHOE-COMPANY\/images\/hero-background\.png\'\)\] {
-  background-image: url('C:/Users/CHINMOY/project/frontend-roadmap/css/tailwaind_project/THE-SHOE-COMPANY/images/hero-background.png');
-}
-
-.bg-\[url\(\'\.\/tailwaind_project\/THE-SHOE-COMPANY\/images\/hero-background\.png\'\)\] {
-  background-image: url('./tailwaind_project/THE-SHOE-COMPANY/images/hero-background.png');
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-12 {
@@ -655,23 +676,26 @@ video {
   padding-right: 3rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
   line-height: 1;
 }
 
@@ -680,16 +704,50 @@ video {
   line-height: 1;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
-.leading-\[88px\] {
-  line-height: 88px;
-}
-
 .leading-\[72px\] {
   line-height: 72px;
+}
+
+.leading-\[48\] {
+  line-height: 48;
+}
+
+.leading-\[48px\] {
+  line-height: 48px;
 }
 
 .text-white {
@@ -698,8 +756,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-8 {
-    margin-top: 2rem;
+  .md\:-mt-8 {
+    margin-top: -2rem;
   }
 
   .md\:block {
@@ -708,6 +766,37 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-32 {
+    width: 8rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:bg-contain {
+    background-size: contain;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:leading-\[72px\] {
+    line-height: 72px;
   }
 }
 
